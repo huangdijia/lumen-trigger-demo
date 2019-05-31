@@ -98,4 +98,6 @@ $app->router->group([
     require __DIR__.'/../routes/web.php';
 });
 
+$app->configure('trigger');
+
 return $app;
