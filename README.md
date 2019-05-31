@@ -15,15 +15,30 @@ php artisan trigger:start
 you can see:
 
 ~~~bash
-Host:192.168.*.*25*
-Port:3306
-User:******
-Password:******
-
-starting from file:log.000619, position:218837 bin log position
-Subscriber Huangdijia\Trigger\Events\TriggerEvent registered
-Subscriber Huangdijia\Trigger\Events\TerminateEvent registered
-Subscriber Huangdijia\Trigger\Events\HeartbeatEvent registered
+Configure
++----------+--------------+
+| Name     | Value        |
++----------+--------------+
+| Host     | 192.168.*.*  |
+| Port     | 3306         |
+| User     | ***********  |
+| Password | ***********  |
++----------+--------------+
+BinLogInformation
++----------------+------------+
+| Parameter      | Value      |
++----------------+------------+
+| BinLogFileName | log.000619 |
+| BinLogPosition | 894538     |
++----------------+------------+
++------------------------------------------+-----------+
+| Subscriber                               | Registerd |
++------------------------------------------+-----------+
+| App\Listeners\HeartbeatSubscriber        | √         |
+| Huangdijia\Trigger\Subscribers\Trigger   | √         |
+| Huangdijia\Trigger\Subscribers\Terminate | √         |
+| Huangdijia\Trigger\Subscribers\Heartbeat | √         |
++------------------------------------------+-----------+
 
 Trigger running
 ~~~
