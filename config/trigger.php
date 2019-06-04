@@ -10,5 +10,7 @@ return [
     'heartbeat'   => (int) env('TRIGGER_HEARTBEAT', 3),
     'subscribers' => [
         App\Listeners\HeartbeatSubscriber::class,
+        App\Listeners\HeartbeatSubscriber::class,
+        App\Listeners\HeartbeatSubscriber::class,
     ],
 ];

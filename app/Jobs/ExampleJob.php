@@ -4,14 +4,16 @@ namespace App\Jobs;
 
 class ExampleJob extends Job
 {
+    private $event;
+
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($event)
     {
-        //
+        $this->event = $event;
     }
 
     /**
@@ -21,6 +23,6 @@ class ExampleJob extends Job
      */
     public function handle()
     {
-        //
+        dump($this->event->__toString());
     }
 }
