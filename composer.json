@@ -6,7 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=7.1.3",
-        "huangdijia/laravel-trigger": "^1.1",
+        "huangdijia/laravel-trigger": "^2.0",
         "laravel/lumen-framework": "5.8.*",
         "laravel/tinker": "^1.0",
         "vlucas/phpdotenv": "^3.3"
