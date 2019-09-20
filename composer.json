@@ -1,19 +1,19 @@
 {
-    "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
+    "name": "huangdijia/lumen-trigger-demo",
+    "description": "The demo of trigger on lumen.",
     "keywords": ["framework", "laravel", "lumen"],
     "license": "MIT",
     "type": "project",
     "require": {
-        "php": ">=7.1.3",
+        "php": "^7.2",
         "huangdijia/laravel-trigger": "^2.0",
-        "laravel/lumen-framework": "5.8.*",
+        "laravel/lumen-framework": "^6.0|^7.0",
         "laravel/tinker": "^1.0",
         "vlucas/phpdotenv": "^3.3"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.4",
-        "phpunit/phpunit": "^7.0",
+        "phpunit/phpunit": "^8.0",
         "mockery/mockery": "^1.0"
     },
     "autoload": {
